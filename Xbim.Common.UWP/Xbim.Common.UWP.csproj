@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A8D478A-30D9-4AED-84E7-93816BC687E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xbim.Common.UWP</RootNamespace>
+    <AssemblyName>Xbim.Common.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.10</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Collections\ExtendedItemSet.cs" />
+    <Compile Include="Collections\ExtendedSingleSet.cs" />
+    <Compile Include="Collections\ItemSet.cs" />
+    <Compile Include="Collections\MultiValueDictionary.cs" />
+    <Compile Include="Collections\ProxyItemSet.cs" />
+    <Compile Include="Collections\ProxyNestedItemSet.cs" />
+    <Compile Include="Collections\ProxyValueSet.cs" />
+    <Compile Include="Collections\ReverseProxyItemSet.cs" />
+    <Compile Include="Collections\VolatileProxyItemSet.cs" />
+    <Compile Include="Delta\TransactionLog.cs" />
+    <Compile Include="Enumerations\StorageType.cs" />
+    <Compile Include="Enumerations\ValidationFlags.cs" />
+    <Compile Include="Enumerations\XbimDBAccess.cs" />
+    <Compile Include="Enumerations\XbimModelType.cs" />
+    <Compile Include="Enumerations\XbimRepresentationType.cs" />
+    <Compile Include="Enumerations\XbimStoreType.cs" />
+    <Compile Include="Exceptions\ExceptionExtensions.cs" />
+    <Compile Include="Exceptions\XbimException.cs" />
+    <Compile Include="Exceptions\XbimGeometryException.cs" />
+    <Compile Include="Exceptions\XbimGeometryFaceSetTooLargeException.cs" />
+    <Compile Include="Exceptions\XbimInitializationFailedException.cs" />
+    <Compile Include="Exceptions\XbimParserException.cs" />
+    <Compile Include="ExpressInterfaces.cs" />
+    <Compile Include="ExpressValidation\IExpressValidatable.cs" />
+    <Compile Include="ExpressValidation\ValidationResult.cs" />
+    <Compile Include="ExpressValidation\Validator.cs" />
+    <Compile Include="Federation\FederatedModelInstances.cs" />
+    <Compile Include="Federation\IFederatedModel.cs" />
+    <Compile Include="Federation\IReferencedModel.cs" />
+    <Compile Include="Federation\ReferencedModelCollection.cs" />
+    <Compile Include="FlagSetter.cs" />
+    <Compile Include="Geometry\IGeometryManager.cs" />
+    <Compile Include="Geometry\IGeometryStore.cs" />
+    <Compile Include="Geometry\IGeometryStoreInitialiser.cs" />
+    <Compile Include="Geometry\IGeometryStoreReader.cs" />
+    <Compile Include="Geometry\IVector3D.cs" />
+    <Compile Include="Geometry\IXbimBooleanOperand.cs" />
+    <Compile Include="Geometry\IXbimCurve.cs" />
+    <Compile Include="Geometry\IXbimCurveSet.cs" />
+    <Compile Include="Geometry\IXbimEdge.cs" />
+    <Compile Include="Geometry\IXbimEdgeSet.cs" />
+    <Compile Include="Geometry\IXbimFace.cs" />
+    <Compile Include="Geometry\IXbimFaceSet.cs" />
+    <Compile Include="Geometry\IXbimGeometryObject.cs" />
+    <Compile Include="Geometry\IXbimGeometryObjectSet.cs" />
+    <Compile Include="Geometry\IXbimMesh.cs" />
+    <Compile Include="Geometry\IXbimMeshSet.cs" />
+    <Compile Include="Geometry\IXbimOrientedEdge.cs" />
+    <Compile Include="Geometry\IXbimPoint.cs" />
+    <Compile Include="Geometry\IXbimShapeGeometryData.cs" />
+    <Compile Include="Geometry\IXbimShapeInstanceData.cs" />
+    <Compile Include="Geometry\IXbimShell.cs" />
+    <Compile Include="Geometry\IXbimShellSet.cs" />
+    <Compile Include="Geometry\IXbimSolid.cs" />
+    <Compile Include="Geometry\IXbimSolidSet.cs" />
+    <Compile Include="Geometry\IXbimSpatialObject.cs" />
+    <Compile Include="Geometry\IXbimSurface.cs" />
+    <Compile Include="Geometry\IXbimTriangulatedFaceSet.cs" />
+    <Compile Include="Geometry\IXbimVertex.cs" />
+    <Compile Include="Geometry\IXbimVertexSet.cs" />
+    <Compile Include="Geometry\IXbimWire.cs" />
+    <Compile Include="Geometry\IXbimWireSet.cs" />
+    <Compile Include="Geometry\XbimBBoxClusterElement.cs" />
+    <Compile Include="Geometry\XbimContextRegionCollection.cs" />
+    <Compile Include="Geometry\XbimDimensionalExponents.cs" />
+    <Compile Include="Geometry\XbimDirectionEnum.cs" />
+    <Compile Include="Geometry\XbimFaceTriangulation.cs" />
+    <Compile Include="Geometry\XbimGeometryData.cs" />
+    <Compile Include="Geometry\XbimGeometryObjectType.cs" />
+    <Compile Include="Geometry\XbimGeometryRepresentationType.cs" />
+    <Compile Include="Geometry\XbimGeometryType.cs" />
+    <Compile Include="Geometry\XbimLine.cs" />
+    <Compile Include="Geometry\XbimLOD.cs" />
+    <Compile Include="Geometry\XbimMatrix3D.cs" />
+    <Compile Include="Geometry\XbimPackedNormal.cs" />
+    <Compile Include="Geometry\XbimPackedNormalCollection.cs" />
+    <Compile Include="Geometry\XbimPoint3D.cs" />
+    <Compile Include="Geometry\XbimQuaternion.cs" />
+    <Compile Include="Geometry\XbimRect3D.cs" />
+    <Compile Include="Geometry\XbimRegion.cs" />
+    <Compile Include="Geometry\XbimRegionCollection.cs" />
+    <Compile Include="Geometry\XbimShapeGeometry.cs" />
+    <Compile Include="Geometry\XbimShapeInstance.cs" />
+    <Compile Include="Geometry\XbimShapeTriangulation.cs" />
+    <Compile Include="Geometry\XbimVector3D.cs" />
+    <Compile Include="IContainsEntityReferences.cs" />
+    <Compile Include="IContainsIndexedReference.cs" />
+    <Compile Include="IEntityCache.cs" />
+    <Compile Include="IEntityCollection.cs" />
+    <Compile Include="IEntityFactory.cs" />
+    <Compile Include="IInstantiableEntity.cs" />
+    <Compile Include="IInverseCache.cs" />
+    <Compile Include="IItemSet.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="IModelFactors.cs" />
+    <Compile Include="IModelProvider.cs" />
+    <Compile Include="IModelProviderFactory.cs" />
+    <Compile Include="IOptionalItemSet.cs" />
+    <Compile Include="IPersist.cs" />
+    <Compile Include="IPersistEntity.cs" />
+    <Compile Include="IPersistEntityExtensions.cs" />
+    <Compile Include="IPropertyValue.cs" />
+    <Compile Include="ITransaction.cs" />
+    <Compile Include="Metadata\ExpressMetaData.cs" />
+    <Compile Include="Metadata\ExpressType.cs" />
+    <Compile Include="Metadata\ExpressTypeDictionary.cs" />
+    <Compile Include="ModelFactors.cs" />
+    <Compile Include="ModelHelper.cs" />
+    <Compile Include="Model\EntityCollection.cs" />
+    <Compile Include="Model\InMemoryGeometryStore.cs" />
+    <Compile Include="Model\InMemoryGeometryStoreInitialiser.cs" />
+    <Compile Include="Model\InMemoryGeometryStoreReader.cs" />
+    <Compile Include="Model\MemoryEntityCache.cs" />
+    <Compile Include="Model\MemoryInverseCache.cs" />
+    <Compile Include="Model\StepModel.cs" />
+    <Compile Include="Model\Transaction.cs" />
+    <Compile Include="PersistEntity.cs" />
+    <Compile Include="PlaceboTransaction.cs" />
+    <Compile Include="Presentation\EntitySelection.cs" />
+    <Compile Include="Presentation\XbimIPersistEntityCollection.cs" />
+    <Compile Include="ProjectUnits.cs" />
+    <Compile Include="ReportProgressDelegate.cs" />
+    <Compile Include="Step21\IStepFileDescription.cs" />
+    <Compile Include="Step21\IStepFileHeader.cs" />
+    <Compile Include="Step21\IStepFileName.cs" />
+    <Compile Include="Step21\IStepFileSchema.cs" />
+    <Compile Include="Step21\LogEventIds.cs" />
+    <Compile Include="Step21\ParserErrorRegistry.cs" />
+    <Compile Include="Step21\Parser\IStepP21Parser.cs" />
+    <Compile Include="Step21\Parser\Parser.cs" />
+    <Compile Include="Step21\Parser\PropertyValue.cs" />
+    <Compile Include="Step21\Parser\ShiftReduceParserCode.cs" />
+    <Compile Include="Step21\Parser\StepP21Entity.cs" />
+    <Compile Include="Step21\Parser\StepP21Lex.cs" />
+    <Compile Include="Step21\Parser\StepP21Parser.cs" />
+    <Compile Include="Step21\Parser\XbimScanBuffer.cs" />
+    <Compile Include="Step21\Part21Formatter.cs" />
+    <Compile Include="Step21\Part21Writer.cs" />
+    <Compile Include="Step21\StepDateTimeHelper.cs" />
+    <Compile Include="Step21\StepDoubleHelper.cs" />
+    <Compile Include="Step21\StepFileHeader.cs" />
+    <Compile Include="Step21\StepGuidHelper.cs" />
+    <Compile Include="Step21\StepParserType.cs" />
+    <Compile Include="Step21\StepTextHelper.cs" />
+    <Compile Include="Step21\XbimP21Parser.cs" />
+    <Compile Include="Step21\XbimP21Scanner.cs" />
+    <Compile Include="Step21\XbimP21StringDecoder.cs" />
+    <Compile Include="Step21\XbimSchemaVersion.cs" />
+    <Compile Include="StoreCapabilities.cs" />
+    <Compile Include="TypeExtensions.cs" />
+    <Compile Include="XbimAssemblyInfo.cs" />
+    <Compile Include="XbimExtensions\BinaryReaderExtensions.cs" />
+    <Compile Include="XbimExtensions\IEnumerableExtensions.cs" />
+    <Compile Include="XbimExtensions\StringExtensions.cs" />
+    <Compile Include="XbimExtensions\XbimTriplet.cs" />
+    <Compile Include="XbimInstanceHandle.cs" />
+    <Compile Include="XbimInstanceHandleMap.cs" />
+    <Compile Include="XbimLogging.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Step21\Parser\Gplex.exe" />
+    <Content Include="Step21\Parser\Gppg.exe" />
+    <Content Include="Step21\Parser\Readme.txt" />
+    <Content Include="Step21\Parser\StepP21Parser.lst" />
+    <Content Include="xbim-toolkit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Step21\Parser\MAKEPARSER.BAT" />
+    <None Include="Step21\Parser\StepP21Lex.lex" />
+    <None Include="Step21\Parser\StepP21Parser.y" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
